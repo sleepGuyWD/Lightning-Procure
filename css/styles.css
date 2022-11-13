@@ -200,7 +200,8 @@ input[type=text]:focus {
   justify-content: center;
   align-items: center;
   background-image: url('../Img/bgCalc.jpg');
-  background-position: bottom -6rem right -5rem;
+  background-position: bottom -6rem right 0;
+  background-repeat: no-repeat;
   background-size: cover;
   margin: 1rem;
   border-radius: 20px;
