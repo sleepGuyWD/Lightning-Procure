@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lightning Procure</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Inter:wght@100;200;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
   <section class="sidePortion" id="quickGuide">
@@ -29,11 +29,39 @@
   </section>
   <main>
     <section id="mainHolder">
-      <section class="titleHalf 1">
-        <h1>Lightning Procure</h1>
-        <span>Quick-glance, 6-month overview</span>
+      <section id="topSection">
+        <section class="titleHalf One">
+          <h1>Lightning Procure</h1>
+          <span>Quick-glance, 6-month overview</span>
+        </section>
+        <section class="titleHalf Two"></section>
       </section>
-      <section class="titleHalf 2"></section>
+      <div id="inputSecHolder">
+        <section id="inputSection">
+          <section class="row Current">
+            <span class="textDescription">Enter Current Stock</span>
+            <input type="text" name="" id="currentInput">
+          </section>
+          <section class="row Low">
+            <span class="textDescription">Enter 3-Month Low</span>
+            <input type="text" name="" id="lowInput">
+          </section>
+          <section class="row High">
+            <span class="textDescription">Enter 3-Month High</span>
+            <input type="text" name="" id="highInput">
+          </section>
+          <section class="row Rebuy">
+            <span class="textDescription">Enter Rebuy Qty</span>
+            <input type="text" name="" id="rebuyInput">
+          </section>
+        </section>
+      </div>
+      <section id="calcSection">
+        <button>Calculate</button>
+      </section>
+      <section id="displayDataSection">
+        <div id="dataPlacement"></div>
+      </section>
     </section>
   </main>
   <section class="sidePortion"></section>
