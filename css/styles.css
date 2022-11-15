@@ -10,19 +10,19 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
   margin-top: 100%;
-  height: 393px;
-  width: 242px;
+  height: 24.56rem;
+  width: 15.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 35px;
+  border-radius: 2.18rem;
   box-shadow: -2px 5px 5px rgb(39, 38, 38);
 }
 
 #inner {
   background-color: #F5F5F5;
-  height: 360px;
-  width: 220px;
+  height: 22.5rem;
+  width: 13.75rem;
   border-radius: 35px;
   
 }
@@ -32,7 +32,7 @@ body {
   font-family: 'Inter';
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: .75rem;
   justify-content: center;
   text-align: left;
   height: 100%;
@@ -81,8 +81,8 @@ main {
 
 .titleHalf.One {
   background: #F5F5F5;
-  width: 402px;
-  height: 97px;
+  width: 25.125rem;
+  height: 6.06rem;
   padding: 1rem;
   margin: 1rem;
   border-radius: 20px;
@@ -180,10 +180,8 @@ button:active {
 }
 
 input {
- 
   font-size: 1.5rem;
   color: #4D606E;
- 
 }
 
 input[type=text] {
@@ -226,4 +224,14 @@ input[type=text]:focus {
   font-weight: 500;
   margin-left: 3rem;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 1500px) {
+  .sidePortion {
+    display: none;
+  }
+  main {
+    margin: 0 auto;
+    width: 100%;
+  }
 }
