@@ -1,8 +1,3 @@
-let currentDE = document.querySelector('#currentInput').innerText
-let lowDE = document.querySelector('#lowInput').value
-let highDE = document.querySelector('#highInput').value
-let rebuyDE = document.querySelector('#rebuyInput').value
-
 class CheckSixMonths {
   constructor(currentDE, lowDE, highDE, rebuyDE) {
     this.current = currentDE
@@ -11,12 +6,12 @@ class CheckSixMonths {
     this.rebuy = rebuyDE
     this.averageUsage = []
     this.monthsArray = [1, 2, 3, 4, 5, 6]
-    //this.getAvg()
+    this.getAvg()
     //this.getCalc()
   }
   getAvg() {
     this.averageUsage.push ((this.low + this.high)/2)
-    //Show Current average is ${this.averageUsage}
+    document.querySelector('#average').innerText = this.averageUsage
   }
   getCalc() {
     this.monthsArray.forEach ( el => {
@@ -32,11 +27,14 @@ class CheckSixMonths {
   }
 }
 
-let partNumber = new CheckSixMonths (currentDE, lowDE, highDE, rebuyDE)
-
-document.querySelector('#getCalc').addEventListener('click', lightningProcure )
+document.querySelector('#getCalc').addEventListener('click', lightningProcure)
 
 function lightningProcure() {
+  let currentDE = Number(document.querySelector('#currentInput').value)
+  let lowDE = Number(document.querySelector('#lowInput').value)
+  let highDE = Number(document.querySelector('#highInput').value)
+  let rebuyDE = Number(document.querySelector('#rebuyInput').value)
 
+  let partNumber = new CheckSixMonths (currentDE, lowDE, highDE, rebuyDE)
   console.log(partNumber)
 }

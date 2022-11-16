@@ -36,37 +36,43 @@
         </section>
         <section class="titleHalf Two"></section>
       </section>
-      <div id="inputSecHolder">
-        <section id="inputSection">
-          <section class="row Current">
-            <span class="textDescription">Enter Current Stock</span>
-            <input type="number" name="" id="currentInput">
+      <form>
+        <div id="inputSecHolder">
+          <section id="inputSection">
+            <section class="row Current">
+              <span class="textDescription">Enter Current Stock</span>
+              <input type="number" name="" id="currentInput">
+            </section>
+            <section class="row Low">
+              <span class="textDescription">Enter 3-Month Low</span>
+              <input type="number" name="" id="lowInput">
+            </section>
+            <section class="row High">
+              <span class="textDescription">Enter 3-Month High</span>
+              <input type="number" name="" id="highInput">
+            </section>
+            <section class="row Rebuy">
+              <span class="textDescription">Enter Rebuy Qty</span>
+              <input type="number" name="" id="rebuyInput">
+            </section>
           </section>
-          <section class="row Low">
-            <span class="textDescription">Enter 3-Month Low</span>
-            <input type="number" name="" id="lowInput">
-          </section>
-          <section class="row High">
-            <span class="textDescription">Enter 3-Month High</span>
-            <input type="number" name="" id="highInput">
-          </section>
-          <section class="row Rebuy">
-            <span class="textDescription">Enter Rebuy Qty</span>
-            <input type="number" name="" id="rebuyInput">
-          </section>
+        </div>
+        <section id="calcSection">
+          <input type="button" id="getCalc" value="Calculate">
         </section>
-      </div>
-      <section id="calcSection">
-        <button id="getCalc">Calculate</button>
-      </section>
+      </form>
       <section id="displayDataSection">
+        <div id="averageSection">
+          <span>Your Monthly Average Usage:</span>
+          <span id="average"></span>
+        </div>
         <div id="dataPlacement">
-          <span id="dataOne"></span>
-          <span id="dataTwo"></span>
-          <span id="dataThree"></span>
-          <span id="dataFour"></span>
-          <span id="dataFive"></span>
-          <span id="dataSix"></span>
+          <span id="dataOne">Month 1:</span>
+          <span id="dataTwo">Month 2:</span>
+          <span id="dataThree">Month 3:</span>
+          <span id="dataFour">Month 4:</span>
+          <span id="dataFive">Month 5:</span>
+          <span id="dataSix">Month 6:</span>
         </div>
       </section>
     </section>
