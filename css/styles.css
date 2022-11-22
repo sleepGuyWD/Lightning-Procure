@@ -281,9 +281,7 @@ input[type=text]:focus {
   #inputSection {
     font-size: 1rem;
   }
-  #inputSecHolder{
-   
-  }
+  
   #currentInput,
   #lowInput,
   #highInput,
@@ -295,6 +293,7 @@ input[type=text]:focus {
   #getCalc {
     font-size: 1.5rem;
     width: 16rem;
+    border: 1px solid #4D606E;
   }
   #calcSection {
     margin: 0;
