@@ -262,3 +262,101 @@ input[type=text]:focus {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  #mainHolder {
+    width: 94%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+   
+  }
+  #topSection {
+    display: flex;
+  }
+  .titleHalf.One {
+    width: 100%;
+    padding: 0;
+  }
+  #inputSection {
+    font-size: 1rem;
+  }
+  #inputSecHolder{
+   
+  }
+  #currentInput,
+  #lowInput,
+  #highInput,
+  #rebuyInput{
+    width:7rem;
+    height: 1.5rem;
+    font-size: 1.25rem;
+  }
+  #getCalc {
+    font-size: 1.5rem;
+    width: 16rem;
+  }
+  #calcSection {
+    margin: 0;
+    height: 3rem;
+    padding-top: 1rem;
+  }
+  .titleHalf.One > h1 {
+    font-family: 'Chakra Petch';
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: .2rem;
+    padding-bottom: .5rem;
+    
+  }
+
+  .titleHalf.One > span {
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  #displayDataSection {
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom 0 right 0;
+    margin-top: 0;
+  }
+  #averageSection, 
+  #dataPlacement {
+    width: 90%;
+  }
+  #averageSection {
+    max-height: 20%;
+    margin: 1rem 0px;
+  }
+
+  #dataPlacement{
+    max-height: 80%;
+    margin-bottom: 1rem ;
+  }
+  #dataPlacement > span {
+   
+    font-family: 'Inter';
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    overflow: hidden;
+  }
+  form {
+    height: 30%;
+  }
+  #topSection {
+    height: 15%;
+  }
+  #averageSection>span {
+    text-align: center;
+    font-size: 1.6;
+  }
+}
