@@ -1,7 +1,7 @@
 body {
   background-color: #4D606E;
   display: flex;
-  width: 100%;
+  box-sizing: border-box;
 }
 
 #outer {
@@ -60,6 +60,7 @@ form {
   border-radius: 20px;
   margin-top: 12%;
   box-shadow: 2px 5px 5px rgb(39, 38, 38);
+
 }
 
 main {
@@ -265,7 +266,7 @@ input[type=text]:focus {
 
 @media only screen and (max-width: 600px) {
   #mainHolder {
-    width: 94%;
+    width: 90%;
     height: 100%;
     margin: 0 auto;
     padding: 0;
