@@ -17,7 +17,7 @@ After using this tool, I have enough insight to perform best course of action th
 
 ## Optimizations
 
-Typically, I can use this web application at my desk, but I have also made this project web-responsive and accessible on my mobile device.  This allows me to be on the warehouse floor and verify what I am physically looking at.
+Typically, I can use this web application at my desk, but I have also made this project web-responsive and accessible on mobile devices.  This allows me to be on the warehouse floor and verify what I am physically looking at.  I could then calculate with this application right there if needed.
 
 ## Lessons Learned:
 
