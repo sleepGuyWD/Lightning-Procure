@@ -15,30 +15,25 @@ class CheckSixMonths {
     document.querySelector('#average').innerText = `About ${this.averageUsage}`
   }
   getCalc() {
-    this.monthsArray.forEach ( (el, i) => {
+    this.monthsArray.forEach ((el, i) => {
       if (this.current <= this.averageUsage) {
         let result = (this.current - this.averageUsage) + this.rebuy
         this.current = result 
 
-        if(this.monthsArray[i] == 1) {
-          this.dataField[i].innerText = `This Month: (Place Order) Current stock will be ${this.current}`
-        } else if (this.monthsArray[i] == 2) {
-          this.dataField[i].innerText = `Next Month: (Place Order) Current stock will be ${this.current}`
-        } else {
-          this.dataField[i].innerText = `Month ${i + 1}: (Place Order) Current stock will be ${this.current}`
-        }
+        this.monthsArray[i] == 1 ? 
+        this.dataField[i].innerText = `Upcoming Month: (Place Order) Current stock will be ${this.current}` :
+        this.monthsArray[i] == 2 ? 
+        this.dataField[i].innerText = `Following Month: (Place Order) Current stock will be ${this.current}` :
+        this.dataField[i].innerText = `Month ${i + 1}: (Place Order) Current stock will be ${this.current}`
+
       } else {
         let result = this.current - this.averageUsage
         this.current = result
 
-        if(this.monthsArray[i] == 1) {
-          this.dataField[i].innerText = `This Month: Current stock is ${this.current}`
-        } else if (this.monthsArray[i] == 2) {
-          this.dataField[i].innerText = `Next Month: Current stock is ${this.current}`
-        } else {
-          this.dataField[i].innerText = `Month ${i + 1}: Current stock is ${this.current}`
+        this.monthsArray[i] == 1 ? this.dataField[i].innerText = `Upcoming Month: Current stock is ${this.current}` :
+        this.monthsArray[i] == 2 ? this.dataField[i].innerText = `Following Month: Current stock is ${this.current}` :
+        this.dataField[i].innerText = `Month ${i + 1}: Current stock is ${this.current}`
       }
-    }
     })
   }
 }
