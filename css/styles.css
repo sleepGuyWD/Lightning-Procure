@@ -115,7 +115,9 @@ main {
   font-weight: 400;
 }
 
-.titleHalf.One > span:hover {
+.titleHalf.One > span:hover,
+#displayDataSection:hover,
+#average:hover{
  
   color: #3fbac2;
 }
